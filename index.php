@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ($_SESSION['username'] != 'nso4wg_a'){
+	$_SESSION['username'] = 'nso4wg_b';
+        $_SESSION['password'] = 'uvachamp19';
+}
+?>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -21,18 +29,20 @@
 <hr>
 <table style="width:100%">
 <tr>
-	<th><p class="text-center"><a href="./DBconn/PersonsForm.html">Coach Insert</a></p></th>
+	<th><p class="text-center"><a href="./login.php">Login to Admin</a></p></th>
 	<th><p class="text-center"><a href="./DBconn/TeamSelect.php">View Teams</a></p></th>
-	<th><p class="text-center"><a href="./ajax/ajaxPlayers/index.html">Search Players by Last Name</a></p></th>
-	<th><p class="text-center"><a href="./DBconn/DeleteForm.html">Delete Games</a></p></th>
+	<th><p class="text-center"><a href="./ajax/ajaxPlayers/index.html">Search Players by Last Name</a></p></th>	
+	<th><p class="text-center"><a href="./DBconn/AvgGpa.php">Average GPA per School</a></p></th>
 </tr>
 <tr>
-	<th><p class="text-center"><a href="./DBconn/AvgGpa.php">Average GPA per School</a></p></th>
+	<th><p class="text-center"><a href="./DBconn/PersonsForm.html">Coach Insert</a></p></th>
+	<th><p class="text-center"><a href="./DBconn/DeleteForm.html">Delete Games</a></p></th>
 	<th><p class="text-center"><a href="./DBconn/UpdateForm.html">Update Sponsor Contributions</a></p></th>
 	<th><p class="text-center"><a href="./DBconn/ExportForm.html">Export Player Data</a></p></th>
-	<th></th>
+		
 </tr>
 </table>
+<p class="text-center"><a href="./account.php">Account</a></p>
 </div>
 </body>
 

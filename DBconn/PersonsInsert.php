@@ -8,9 +8,9 @@
 mysqli_connect_error();
      }
    // Form the SQL query (an INSERT query)
-   $sql="INSERT INTO coach (coach_first, coach_last, record, coach_age)
+   $sql="INSERT INTO coach (coach_first, coach_last, coach_wins, coach_loses, coach_total_games, coach_age)
    VALUES
-   ('$_POST[firstname]','$_POST[lastname]', '$_POST[record]', '$_POST[age]')";
+   ('$_POST[firstname]','$_POST[lastname]', '$_POST[wins]', '$_POST[loses]', 0, '$_POST[age]')";
    
    if (!mysqli_query($con,$sql))
      {
@@ -21,5 +21,5 @@ mysqli_connect_error();
 ?>
 <br>
 <div class="container">
-<a href="../index.html">Home</a>
+<a href="../index.php">Home</a>
 </div>

@@ -10,3 +10,9 @@ if ($_POST['user'] == 'nso4wg_a' && $_POST['pass'] == 'secretpassword') {
 	echo 'Wrong username or password';
 }
 ?>
+<html>
+<body>
+<p><br></p>
+<a href="./index.php">Home</a>
+</body>
+</head>
